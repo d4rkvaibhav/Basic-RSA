@@ -1,6 +1,6 @@
 ## Basic RSA implementation
 
-### Encryption
+## Encryption
 
 ### Algorithm:
 
@@ -21,6 +21,10 @@ Let the message be m.
 Put ciphertext (c) =power(m,e) % n             [pow(m,e,n) can be used in python]
 
 Now our ciphertext is ready !!! :)
+
+## Decryption
+
+Coming Soon !!!!
 
 
 # CODE
