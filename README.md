@@ -2,8 +2,6 @@
 
 ## Encryption
 
-### Algorithm:
-
 1.Choose two different primes p and q.
 
 2.Our modulus(n) will be n=p*q.
@@ -18,7 +16,8 @@ Now we have all the things ready to encrypt.
 
 Let the message be m.
 
-Put ciphertext (c) =power(m,e) % n             [pow(m,e,n) can be used in python]
+Put ciphertext (c) =  power(m,e) % n <br>
+{pow(m,e,n) can be used in python}
 
 Now our ciphertext is ready !!! :)
 
