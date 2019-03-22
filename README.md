@@ -1,24 +1,30 @@
 ## Basic RSA implementation
 
-You can use the [editor on GitHub](https://github.com/d4rkvaibhav/Basic-RSA-implentation/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Encryption
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Algorithm:
 
-### Markdown
+1.Choose two different primes p and q.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+2.Our modulus(n) will be n=p*q.
 
-```markdown
-Syntax highlighted code block
+3.Calculate t = (p-1)*(q-1)
 
-# Header 1
-## Header 2
-### Header 3
+4.Now we have to choose **e** (public key exponent) such that 1<e<t and gcd(e,t)=1 .But it is advisable to choose a medium range e becuase if e is very large or very small than RSA can be attacked using various techniques.
 
-- Bulleted
-- List
+5.Then we have to compte d (private key) such that d*e=1+kt where k is a natural number.
 
-1. Numbered
-2. List
+Now we have all the things ready to encrypt.
 
-**Bold** and _Italic_ and `Code` text
+Let the message be m.
+
+Put ciphertext (c) =power(m,e) % n             [pow(m,e,n) can be used in python]
+
+Now our ciphertext is ready !!! :)
+
+
+# CODE
+You can get the python code for encyption [here](encrypt.py).
+
+Decryption of RSA Coming Soon !!
+
