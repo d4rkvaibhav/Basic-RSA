@@ -18,12 +18,10 @@ for k in range(t):
 d=int(d)
 m=inp.encode('utf=8')
 m=m.hex()
-print(m)
-
 m=int(m,16)
 c=pow(m,e,n)
 print("Modulo (n)	:	",p*q)
-print("Orignal message	:	",inp,m)
+print("Orignal message	:	",inp)
 print("Ciphertext(c)	:	",c)
 print("Private key(d)	:	",d)
 print("First prime (p)	:	",p)
