@@ -1,6 +1,9 @@
 ## Basic RSA implementation
 
+
+
 ## Encryption
+
 
 1.Choose two different primes p and q.
 
@@ -21,9 +24,12 @@ Put ciphertext (c) =  power(m,e) % n <br>
 
 Now our ciphertext is ready !!! :)
 
+
 ## Decryption
 
 Coming Soon !!!!
+
+
 
 
 # CODE
