@@ -33,6 +33,32 @@ Coming Soon !!!!
 
 
 # CODE
+
+```markdown
+from Crypto.Util.number import *
+import random
+from fractions import gcd
+print("Enter text to encrypt")
+inp=input()
+p=getPrime(32)
+q= getPrime(32)
+n=p*q
+t=(p-1)*(q-1)
+while(True):
+	e=random.randint(1,65537)
+	if(gcd(e,t)==1):
+		break
+for k in range(t):
+	d=(1+(k*t))/e
+	if(float(d).is_integer()==True):
+		break
+d=int(d)
+m=inp.encode('utf=8')
+m=m.hex()
+m=int(m,16)
+c=pow(m,e,n)
+
+```
 You can get the python code for encyption [here](encrypt.py).
 
 Decryption of RSA Coming Soon !!
